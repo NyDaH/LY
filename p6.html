@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#005236", "tertiary-container": "#4b4dd8", "on-surface-variant": "#464555", "on-secondary": "#ffffff", "background": "#faf8ff", "primary-fixed-dim": "#c3c0ff", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#4edea3", "on-primary-container": "#dad7ff", "surface-container-high": "#e2e7ff", "surface-variant": "#dae2fd", "surface": "#faf8ff", "primary-container": "#4f46e5", "surface-container-highest": "#dae2fd", "tertiary-fixed": "#e1e0ff", "on-tertiary-container": "#d9d8ff", "tertiary": "#3130c0", "on-error-container": "#93000a", "on-background": "#131b2e", "primary-fixed": "#e2dfff", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-fixed": "#0f0069", "on-surface": "#131b2e", "on-secondary-container": "#00714d", "surface-tint": "#4d44e3", "surface-container-lowest": "#ffffff", "outline-variant": "#c7c4d8", "surface-bright": "#faf8ff", "secondary-container": "#6cf8bb", "on-primary": "#ffffff", "on-primary-fixed-variant": "#3323cc", "inverse-primary": "#c3c0ff", "error": "#ba1a1a", "secondary": "#006c49", "secondary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#c0c1ff", "on-secondary-fixed": "#002113", "inverse-surface": "#283044", "surface-container": "#eaedff", "primary": "#3525cd", "surface-container-low": "#f2f3ff", "surface-dim": "#d2d9f4", "on-error": "#ffffff", "error-container": "#ffdad6", "outline": "#777587", "on-tertiary-fixed": "#07006c", "inverse-on-surface": "#eef0ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-2xs": "0.125rem", "space-md": "0.75rem", "gutter-compact": "0.5rem", "space-2xl": "2rem", "margin-tablet": "1.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "gutter": "0.75rem", "margin": "1rem", "space-lg": "1rem", "space-sm": "0.5rem" }, fontFamily: { "body-sm": ["Inter"], "title-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "metric-xl": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "headline-sm": ["Inter"] }, fontSize: { "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "title-md": ["15px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.02em", fontWeight: "600" }], "metric-xl": ["28px", { lineHeight: "34px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.025em", fontWeight: "700" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-sm": ["17px", { lineHeight: "24px", letterSpacing: "-0.015em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(19,27,46,0.04)]"><div class="h-16 px-space-lg flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="MindFile AI Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Ugh9zqHGV4gc95ackOK-1pET4xX6egnykq-41Ygz08yQZc2nY1DLuQdEUXABY5Ywv02ehhZZNsQ8N03MgbGoXZz7_L969vjzbgJuYf23_qLBwR5ydAh-cCiq07m5eWM3K_deuKjjsvohoBlk2qxWTJHSwuCYDkLxvaUY-tnTmvNxhXFgU8msr7xPAeOZ3QPbMV9-Fb6UReDSeSBooY_MnPrgEC1Xq4UWZhzQ581131vfPc2Pmz96lZ7A"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">마인드파일 AI</span><span class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>AI 활성</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Layout</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="알림" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/50 transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(19,27,46,0.1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2fKPpBiLOTHophlqNs-9g5lMLRspKtjald1LKEcO1DshhtvBs0GbncR413V23mPn8lLUd1uYoJRikVQEkp-WnDLrrPSD01Eus8mdUF4QOcyZFNM-JZfoUZtAtLSJx9UydEy7IJcji8uQtFvFTz8HcUlJgOh5wT-H0vqPZlB1eGV1Q2N_yejee0z_NYXhtfEhULrMGXCZI5-8ecgNPB3zYoXUJcOhg2JW63i0hhFet5POILXXHaHfM"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-margin pb-space-2xl space-y-space-xl">
+<!-- 1. 성향 진단 요약 카드 (Bento Style) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-label-sm text-label-sm">AI 워크플로우 진단 리포트</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+          김민서 님의 정리 성향<br/>
+<span class="text-primary-container font-headline-md text-headline-md inline-flex items-center gap-1 mt-0.5">
+            🎨 비주얼 크리에이터 &amp; 기획자형
+          </span>
+</h2>
+</div>
+<button aria-label="진단 다시하기" class="flex-shrink-0 flex items-center gap-1 px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm transition-all active:scale-95" id="btn-retest">
+<span class="material-symbols-outlined text-[15px]">refresh</span>
+<span>다시하기</span>
+</button>
+</div>
+<!-- 성향 하이라이트 뱃지 & 지표 -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">screenshot_monitor</span>
+<span class="font-label-sm text-label-sm">스크린샷 &amp; 영수증</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">상위 5% 초과 발생</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">자료 캡처 직후 분류 필요</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">photo_library</span>
+<span class="font-label-sm text-label-sm">일일 미디어 유입</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">평균 28개 신규 파일</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">용량 최적화가 필수적</span>
+</div>
+</div>
+</div>
+<!-- 2. 기기별 탭 토글 -->
+<div class="w-full flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">기기별 위젯 환경</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+        동기화 준비 완료
+      </span>
+</div>
+<div class="w-full bg-surface-container rounded-full p-1 flex items-center text-label-md font-label-md">
+<button class="flex-1 py-2 rounded-full bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5 transition-all" id="tab-phone">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+<span>스마트폰 (iOS/AOS)</span>
+</button>
+<button class="flex-1 py-2 rounded-full text-on-surface-variant flex items-center justify-center gap-1.5 transition-all hover:text-on-surface" id="tab-desktop">
+<span class="material-symbols-outlined text-[18px]">laptop_mac</span>
+<span>노트북 &amp; 데스크톱</span>
+</button>
+</div>
+</div>
+<!-- 3. 인터랙티브 스마트폰 홈 화면 목업 프리뷰 -->
+<div class="w-full bg-gradient-to-b from-surface-container-high/60 to-surface-container/40 rounded-2xl p-space-md flex flex-col items-center gap-space-md shadow-inner">
+<div class="w-full flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">preview</span>
+<span class="font-label-md text-label-md text-on-surface">홈 화면 실시간 배치 시뮬레이션</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/80 px-2 py-0.5 rounded-full">4×6 그리드 기준</span>
+</div>
+<!-- 미니 폰 프레임 -->
+<div class="w-full max-w-[320px] bg-slate-900 rounded-[36px] p-3 shadow-2xl relative flex flex-col gap-2.5 text-white">
+<!-- 노치 / 다이내믹 아일랜드 -->
+<div class="w-20 h-4 bg-black rounded-full mx-auto mb-1 flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-slate-800 mr-2"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-indigo-900"></div>
+</div>
+<!-- 상단 시계 & 날짜 간이 표시 -->
+<div class="flex items-center justify-between px-3 text-slate-300 font-label-sm text-label-sm">
+<span>10월 24일 목요일</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">wifi</span>
+<span class="material-symbols-outlined text-[12px]">battery_charging_full</span>
+</div>
+</div>
+<!-- 위젯 1: 4x2 실시간 AI 스토리지 & 원클릭 청소 -->
+<div class="w-full bg-slate-800/90 rounded-2xl p-3 shadow-lg flex flex-col justify-between relative overflow-hidden backdrop-blur-md">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-indigo-500/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-indigo-400" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-[11px] font-semibold tracking-tight text-slate-200">마인드파일 AI 스토리지</span>
+</div>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300">최적 상태 92%</span>
+</div>
+<div class="flex items-end justify-between gap-2">
+<div>
+<div class="text-[10px] text-slate-400">잔여 여유 공간</div>
+<div class="text-[17px] font-bold text-white tracking-tight leading-none mt-0.5">33.8 <span class="text-[12px] font-normal text-slate-300">GB</span></div>
+</div>
+<button class="bg-gradient-to-r from-indigo-500 to-primary-container text-white px-2.5 py-1.5 rounded-xl text-[11px] font-semibold flex items-center gap-1 shadow-md hover:opacity-95 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">cleaning_services</span>
+<span>6GB 청소</span>
+</button>
+</div>
+<!-- 씬 게이지 바 -->
+<div class="w-full h-1.5 bg-slate-700 rounded-full mt-2.5 overflow-hidden flex">
+<div class="h-full bg-indigo-500" style="width: 55%"></div>
+<div class="h-full bg-purple-400" style="width: 15%"></div>
+<div class="h-full bg-emerald-400" style="width: 12%"></div>
+</div>
+</div>
+<!-- 위젯 2 & 3: 2x2 그리드 영역 -->
+<div class="grid grid-cols-2 gap-2.5 w-full">
+<!-- 2x2 스마트 영수증 위젯 -->
+<div class="bg-slate-800/90 rounded-2xl p-2.5 shadow-md flex flex-col justify-between backdrop-blur-md relative">
+<div class="flex items-center justify-between">
+<div class="w-6 h-6 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+<span class="material-symbols-outlined text-[15px]">receipt_long</span>
+</div>
+<span class="text-[9px] bg-indigo-900/60 text-indigo-300 px-1 rounded">OCR 자동</span>
+</div>
+<div class="mt-2">
+<div class="text-[10px] text-slate-300 font-medium">오늘의 영수증</div>
+<div class="text-[13px] font-bold text-white mt-0.5 flex items-center gap-1">
+<span>3건 완료</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+</div>
+<div class="text-[9px] text-slate-400 truncate mt-0.5">스타벅스 외 2건 대기</div>
+</div>
+</div>
+<!-- 2x2 연관 마인드맵 퀵 노드 -->
+<div class="bg-slate-800/90 rounded-2xl p-2.5 shadow-md flex flex-col justify-between backdrop-blur-md relative">
+<div class="flex items-center justify-between">
+<div class="w-6 h-6 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined text-[15px]">hub</span>
+</div>
+<span class="text-[9px] text-slate-400">1초 점프</span>
+</div>
+<div class="mt-2">
+<div class="text-[10px] text-slate-300 font-medium">최근 마인드 노드</div>
+<div class="text-[12px] font-bold text-white truncate mt-0.5">#24_Q4_론칭기획</div>
+<div class="text-[9px] text-purple-300 flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[10px]">link</span>
+<span>18개 파일 연결됨</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 하단 독(Dock) 추천 배치 -->
+<div class="w-full bg-slate-800/70 rounded-[22px] px-3 py-2 flex items-center justify-between mt-1 backdrop-blur-md">
+<!-- 앱 1: 마인드파일 -->
+<div class="flex flex-col items-center">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary to-indigo-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-white">folder_supervised</span>
+</div>
+<span class="text-[8px] text-slate-300 mt-0.5 scale-90">마인드파일</span>
+</div>
+<!-- 앱 2: 카메라 -->
+<div class="flex flex-col items-center">
+<div class="w-9 h-9 rounded-xl bg-slate-700 flex items-center justify-center text-slate-200">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<span class="text-[8px] text-slate-400 mt-0.5 scale-90">카메라</span>
+</div>
+<!-- 앱 3: 메모 -->
+<div class="flex flex-col items-center">
+<div class="w-9 h-9 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-300">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<span class="text-[8px] text-slate-400 mt-0.5 scale-90">빠른메모</span>
+</div>
+<!-- 앱 4: 드라이브 -->
+<div class="flex flex-col items-center">
+<div class="w-9 h-9 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-300">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<span class="text-[8px] text-slate-400 mt-0.5 scale-90">드라이브</span>
+</div>
+</div>
+<!-- 홈 인디케이터 바 -->
+<div class="w-24 h-1 bg-slate-500 rounded-full mx-auto mt-1 mb-0.5"></div>
+</div>
+</div>
+<!-- 4. AI 맞춤 배치 추천 옵션 카드 리스트 -->
+<div class="w-full flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">recommend</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI 추천 배치 프리셋 선택</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">터치하여 프리뷰 변경</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="preset-list">
+<!-- 옵션 B: 스마트 업무 & 크리에이터형 (기본 활성 상태) -->
+<div class="preset-card w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs bg-primary-container/[0.04]" data-preset="b">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">옵션 B · 스마트 업무 &amp; 크리에이터형</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">민서님 추천</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">마인드맵 + 영수증 OCR 태깅 위젯 우선 배치로 빠른 아이디어 정리</p>
+</div>
+</div>
+<div class="preset-radio w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 pt-2 border-t border-slate-100/10 text-label-sm font-label-sm text-primary">
+<span class="px-2 py-0.5 rounded bg-surface-container">연관 노드 퀵링크</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">OCR 영수증 위젯</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">스마트 독 4종</span>
+</div>
+</div>
+<!-- 옵션 A: 초경량 미니멀 정리형 -->
+<div class="preset-card w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs" data-preset="a">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">clean_hands</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">옵션 A · 초경량 미니멀 정리형</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">임시 스크린샷 24시간 후 자동 소멸 및 한 줄 통합 검색바 전면 배치</p>
+</div>
+</div>
+<div class="preset-radio w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-low">한 줄 검색 위젯 (4×1)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low">자동 비우기 토글</span>
+</div>
+</div>
+<!-- 옵션 C: 스토리지 세이버형 -->
+<div class="preset-card w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all cursor-pointer flex flex-col gap-space-xs" data-preset="c">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">save</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">옵션 C · 스토리지 세이버형</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">중복 사진 감지 칩 + 고용량 비디오 자동 클라우드 오프로드 알리미</p>
+</div>
+</div>
+<div class="preset-radio w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-low">중복 감지 뱃지 (2×2)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low">클라우드 압축 링크</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 비주얼 에셋 카드 (상세 가이드 플레이스홀더) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="A clean modern illustration of a smartphone screen showing aesthetic widgets floating seamlessly into place with soft indigo and mint glowing connection lines, hyper-minimal tech aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxZGg77bFiZFdexQpU-MSYf3g4Q56gSYHSyrBH0vp6zfK0n4xBCgw-RPiDJohyKf7pQEHmKhaiDvl4Vcxy0WOmqYghLvTyR18pxcl0Ry7osGQRWJWSi__O6AE8Lr8A9HLAefjAVk--FeT5JhcTod9rxlYM_G-j1H5jAwZW3e778Q80fwulUjgRhtUMFNh0dFOaJBX-aHl9Ysbm1aHWX4paNZ6YEHkMHveOi92EZQItJFZOEYODF1JT"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">스마트 배치 자동 런처 연동</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">설정 버튼 한 번으로 홈 화면 레이아웃 스크립트를 즉시 생성합니다.</span>
+</div>
+</div>
+<!-- 5. 하단 고정성 액션 CTA 블록 -->
+<div class="w-full flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-3.5 px-space-lg rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-[0.98] transition-all" id="btn-apply-layout">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">widgets</span>
+<span>내 폰 홈 화면에 위젯 자동 구성 적용하기</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant text-label-sm font-label-sm py-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>삼성 One UI 위젯 스택 &amp; iOS 단축어 위젯 연동 가이드 포함</span>
+</div>
+</div>
+<!-- 완료 토스트 알림 (기본 숨김) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-complete">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md">위젯 자동 구성 프로필이 기기에 전송되었습니다!</span>
+</div>
+</div>
+<script>
+  (function initCustomLayoutInteractions() {
+    // 탭 전환 인터랙션
+    const tabPhone = document.getElementById('tab-phone');
+    const tabDesktop = document.getElementById('tab-desktop');
+
+    if (tabPhone && tabDesktop) {
+      tabPhone.addEventListener('click', () => {
+        tabPhone.className = 'flex-1 py-2 rounded-full bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+        tabDesktop.className = 'flex-1 py-2 rounded-full text-on-surface-variant flex items-center justify-center gap-1.5 transition-all hover:text-on-surface';
+      });
+
+      tabDesktop.addEventListener('click', () => {
+        tabDesktop.className = 'flex-1 py-2 rounded-full bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+        tabPhone.className = 'flex-1 py-2 rounded-full text-on-surface-variant flex items-center justify-center gap-1.5 transition-all hover:text-on-surface';
+      });
+    }
+
+    // 프리셋 카드 선택 라디오 토글
+    const cards = document.querySelectorAll('.preset-card');
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        cards.forEach((c) => {
+          c.classList.remove('bg-primary-container/[0.04]');
+          const radio = c.querySelector('.preset-radio');
+          if (radio) {
+            radio.className = 'preset-radio w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center flex-shrink-0';
+          }
+        });
+
+        card.classList.add('bg-primary-container/[0.04]');
+        const targetRadio = card.querySelector('.preset-radio');
+        if (targetRadio) {
+          targetRadio.className = 'preset-radio w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0';
+        }
+      });
+    });
+
+    // 적용 버튼 클릭 피드백 토스트
+    const applyBtn = document.getElementById('btn-apply-layout');
+    const toast = document.getElementById('toast-complete');
+    if (applyBtn && toast) {
+      applyBtn.addEventListener('click', () => {
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 2500);
+      });
+    }
+
+    // 재진단 버튼 인터랙션
+    const retestBtn = document.getElementById('btn-retest');
+    if (retestBtn) {
+      retestBtn.addEventListener('click', () => {
+        const icon = retestBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('animate-spin');
+        setTimeout(() => {
+          if (icon) icon.classList.remove('animate-spin');
+        }, 800);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(19,27,46,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[44px] min-h-[44px] px-space-xs py-space-2xs text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome_mosaic</span><span class="font-label-sm text-label-sm">홈</span></a><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[44px] min-h-[44px] px-space-xs py-space-2xs text-on-surface-variant transition-colors" data-path="smart-categorize" href="#"><span class="material-symbols-outlined text-[24px]">folder_supervised</span><span class="font-label-sm text-label-sm">스마트분류</span></a><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[44px] min-h-[44px] px-space-xs py-space-2xs text-on-surface-variant transition-colors" data-path="relation-map" href="#"><span class="material-symbols-outlined text-[24px]">hub</span><span class="font-label-sm text-label-sm">연관 맵</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-2xs min-w-[44px] min-h-[44px] px-space-xs py-space-2xs transition-colors text-primary-container font-semibold" data-path="smart-layout" href="#"><span class="material-symbols-outlined text-[24px]">dashboard_customize</span><span class="font-label-sm text-label-sm">맞춤배치</span></a></div></nav></body></html>
